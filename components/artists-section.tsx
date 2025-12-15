@@ -65,6 +65,26 @@ const artists: Artist[] = [
     image: "/artistic-portrait-experimental-cosmic.jpg",
     link: "#",
   },
+  {
+    id: 6,
+    name: "Elena Pasos",
+    firstName: "Elena",
+    lastName: "Pasos",
+    description:
+      "Fotógrafa que captura la esencia efímera de la luz y la sombra en los rincones olvidados de la ciudad.",
+    image: "/placeholder.svg",
+    link: "#",
+  },
+  {
+    id: 7,
+    name: "Ricardo Vega",
+    firstName: "Ricardo",
+    lastName: "Vega",
+    description:
+      "Escultor sonoro que transforma el ruido urbano en paisajes acústicos que invitan a la meditación.",
+    image: "/placeholder.svg",
+    link: "#",
+  },
 ]
 
 function ArtistCard({ artist, index }: { artist: Artist; index: number }) {
@@ -190,22 +210,22 @@ export function ArtistsSection() {
             Artistas
           </h2>
           <p className="text-foreground/60 text-lg max-w-2xl mx-auto">
-            Cinco voces únicas que conforman esta constelación de arte contemporáneo santandereano
+            Siete voces únicas que conforman esta constelación de arte contemporáneo santandereano
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-secondary via-primary to-accent mx-auto rounded-full mt-6" />
         </div>
 
         {/* Artists Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {artists.slice(0, 3).map((artist, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {artists.slice(0, 4).map((artist, index) => (
             <ArtistCard key={artist.id} artist={artist} index={index} />
           ))}
         </div>
 
         {/* Second row centered */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto mt-8">
-          {artists.slice(3).map((artist, index) => (
-            <ArtistCard key={artist.id} artist={artist} index={index + 3} />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mt-8 justify-items-center">
+          {artists.slice(4).map((artist, index) => (
+            <ArtistCard key={artist.id} artist={artist} index={index + 4} />
           ))}
         </div>
       </div>
