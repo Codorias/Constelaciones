@@ -18,8 +18,8 @@ const artists: Artist[] = [
   {
     id: 1,
     name: "Julián Villamizar",
-    firstName: "Julián",
-    lastName: "Villamizar",
+    firstName: "Julián Alberto",
+    lastName: "Villamizar Rincón",
     description:
       "Artista visual que explora las intersecciones entre la memoria colectiva y el paisaje urbano santandereano a través de técnicas mixtas.",
     image: "/artistic-portrait-abstract-cosmic.jpg",
@@ -27,9 +27,9 @@ const artists: Artist[] = [
   },
   {
     id: 2,
-    name: "Dany Gómez",
-    firstName: "Dany",
-    lastName: "Gómez",
+    name: "Sebastián Gómez",
+    firstName: "Sebastián",
+    lastName: "Gómez Vargas",
     description:
       "Creador multidisciplinar cuya obra reflexiona sobre la identidad cultural y las tradiciones ancestrales del territorio.",
     image: "/artistic-portrait-creative-cosmic.jpg",
@@ -38,8 +38,8 @@ const artists: Artist[] = [
   {
     id: 3,
     name: "Neryth Manrique",
-    firstName: "Neryth",
-    lastName: "Manrique",
+    firstName: "Neryth Yamile",
+    lastName: "Manrique Mendoza",
     description:
       "Artista contemporánea que trabaja con instalaciones y arte conceptual, explorando las relaciones entre espacio y tiempo.",
     image: "/artistic-portrait-modern-cosmic.jpg",
@@ -48,8 +48,8 @@ const artists: Artist[] = [
   {
     id: 4,
     name: "Gloria Rodríguez",
-    firstName: "Gloria",
-    lastName: "Rodríguez",
+    firstName: "Gloria Liliana",
+    lastName: "Rodríguez García",
     description:
       "Pintora y escultora cuyo trabajo dialoga con la naturaleza y los elementos orgánicos del paisaje santandereano.",
     image: "/artistic-portrait-elegant-cosmic.jpg",
@@ -58,8 +58,8 @@ const artists: Artist[] = [
   {
     id: 5,
     name: "John Calderón",
-    firstName: "John",
-    lastName: "Calderón",
+    firstName: "John Fredy",
+    lastName: "Calderón Ortiz",
     description:
       "Artista experimental que fusiona tecnología y arte tradicional para crear experiencias inmersivas y reflexivas.",
     image: "/artistic-portrait-experimental-cosmic.jpg",
@@ -67,19 +67,19 @@ const artists: Artist[] = [
   },
   {
     id: 6,
-    name: "Elena Pasos",
-    firstName: "Elena",
-    lastName: "Pasos",
+    name: "Gerson Rozo",
+    firstName: "Gerson Felipe",
+    lastName: "Rozo Betancur",
     description:
-      "Fotógrafa que captura la esencia efímera de la luz y la sombra en los rincones olvidados de la ciudad.",
+      "Fotógrafo que captura la esencia efímera de la luz y la sombra en los rincones olvidados de la ciudad.",
     image: "/placeholder.svg",
     link: "#",
   },
   {
     id: 7,
-    name: "Ricardo Vega",
-    firstName: "Ricardo",
-    lastName: "Vega",
+    name: "Yury Forero",
+    firstName: "Yury Hernando",
+    lastName: "Forero Casas",
     description:
       "Escultor sonoro que transforma el ruido urbano en paisajes acústicos que invitan a la meditación.",
     image: "/placeholder.svg",

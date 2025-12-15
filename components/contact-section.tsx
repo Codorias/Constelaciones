@@ -167,13 +167,19 @@ export function ContactSection() {
         </div>
       </div>
 
-      {/* Footer */}
       <div className="relative z-10 mt-24 pt-8 border-t border-border/30">
-        <div className="text-center">
-          <StarIcon className="w-6 h-6 text-foreground/30 mx-auto mb-4" />
-          <p className="text-foreground/40 text-sm">
-            © 2025 Constelaciones - Diálogos del Arte Santandereano Contemporáneo
-          </p>
+        <div className="flex flex-col items-center justify-center gap-6 text-center">
+          <img
+            src="/logo-imct.png"
+            alt="Instituto Municipal de Cultura y Turismo"
+            className="h-24 md:h-32 object-contain opacity-80 hover:opacity-100 transition-opacity"
+          />
+          <div>
+            <StarIcon className="w-6 h-6 text-foreground/30 mx-auto mb-4" />
+            <p className="text-foreground/40 text-sm">
+              © 2025 Constelaciones - Diálogos del Arte Santandereano Contemporáneo
+            </p>
+          </div>
         </div>
       </div>
     </section>

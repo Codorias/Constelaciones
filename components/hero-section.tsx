@@ -16,7 +16,7 @@ export function HeroSection() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('/images/constelaciones-20portada.jpg')`,
+          backgroundImage: `url('/images/hero-new.jpg')`,
         }}
       />
 
@@ -35,8 +35,8 @@ export function HeroSection() {
 
         {/* Title */}
         <h1
-          className="text-6xl md:text-8xl lg:text-9xl font-black tracking-tight text-foreground mb-4 uppercase"
-          style={{ fontFamily: "Anton, sans-serif" }}
+          className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-normal text-foreground mb-4 uppercase scale-y-125 origin-bottom"
+          style={{ fontFamily: "Impact, Anton, sans-serif" }}
         >
           Constelaciones
         </h1>
@@ -47,19 +47,25 @@ export function HeroSection() {
         </p>
 
         {/* Artists Names */}
-        <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-12 text-sm md:text-base">
-          {["Julián Villamizar", "Dany Gómez", "Neryth Manrique", "Gloria Rodríguez", "John Calderón"].map(
-            (artist, index) => (
-              <span
-                key={artist}
-                className="text-foreground/70 hover:text-foreground transition-colors cursor-default"
-                style={{ animationDelay: `${index * 0.2}s` }}
-              >
-                <span className="font-light">{artist.split(" ")[0]}</span>{" "}
-                <span className="font-bold">{artist.split(" ")[1]}</span>
-              </span>
-            ),
-          )}
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-12 md:text-lg max-w-4xl mx-auto uppercase">
+          {[
+            { first: "Julián Alberto", last: "Villamizar Rincón" },
+            { first: "Sebastián", last: "Gómez Vargas" },
+            { first: "Neryth Yamile", last: "Manrique Mendoza" },
+            { first: "Gloria Liliana", last: "Rodríguez García" },
+            { first: "John Fredy", last: "Calderón Ortiz" },
+            { first: "Gerson Felipe", last: "Rozo Betancur" },
+            { first: "Yury Hernando", last: "Forero Casas" },
+          ].map((artist, index) => (
+            <span
+              key={index}
+              className="text-foreground/70 hover:text-foreground transition-colors cursor-default"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <span className="font-light">{artist.first}</span>{" "}
+              <span className="font-bold">{artist.last}</span>
+            </span>
+          ))}
         </div>
 
         {/* CTA Button */}

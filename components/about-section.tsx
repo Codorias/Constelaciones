@@ -85,6 +85,15 @@ export function AboutSection() {
             y a celebrar el poder del encuentro como origen de nuevas perspectivas creativas.
           </p>
         </div>
+
+        {/* Logo IMCT */}
+        <div className="flex justify-center mt-12">
+          <img
+            src="/logo-imct.png"
+            alt="Instituto Municipal de Cultura y Turismo"
+            className="h-32 md:h-40 object-contain opacity-90 hover:opacity-100 transition-opacity"
+          />
+        </div>
       </div>
     </section>
   )
