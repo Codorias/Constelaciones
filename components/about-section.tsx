@@ -44,7 +44,7 @@ export function AboutSection() {
         >
           <StarIcon className="w-8 h-8 text-primary mx-auto mb-6" />
           <h2
-            className="text-4xl md:text-5xl font-black uppercase tracking-tight mb-4"
+            className="text-4xl md:text-5xl font-black uppercase tracking-tight mb-4 text-white"
             style={{ fontFamily: "Anton, sans-serif" }}
           >
             Sobre el Proyecto
@@ -54,10 +54,10 @@ export function AboutSection() {
 
         {/* Content */}
         <div
-          className={`space-y-6 text-lg md:text-xl text-foreground/80 leading-relaxed transition-all duration-1000 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+          className={`space-y-6 text-lg md:text-xl text-white leading-relaxed transition-all duration-1000 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
           <p className="text-justify">
-            <span className="text-primary font-semibold">Constelaciones</span> es un punto de encuentro entre artistas
+            <span className="text-white font-semibold">Constelaciones</span> es un punto de encuentro entre artistas
             que, desde diversas miradas y técnicas, conforman un mapa sensible del arte santandereano contemporáneo.
             Cada obra aquí reunida se erige como una estrella que, al relacionarse con las demás, revela la riqueza de
             un territorio creativo en constante transformación.
@@ -76,7 +76,7 @@ export function AboutSection() {
 
           <p className="text-justify">
             En este entramado, el arte no se presenta como una experiencia aislada, sino como una{" "}
-            <span className="text-secondary font-semibold">red de vínculos</span> que invita a reflexionar sobre nuestra
+            <span className="text-white font-semibold">red de vínculos</span> que invita a reflexionar sobre nuestra
             identidad, los paisajes que habitamos y las formas en que imaginamos el futuro.
           </p>
 
