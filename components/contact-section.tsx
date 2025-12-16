@@ -57,13 +57,19 @@ export function ContactSection() {
           <p className="text-foreground/60 text-lg max-w-xl mx-auto mb-8">
             Explora todas las obras y conoce más sobre cada artista en nuestro brochure digital
           </p>
-          <Button
-            size="lg"
-            className="bg-gradient-to-r from-primary via-secondary to-accent text-foreground hover:opacity-90 transition-all duration-300 px-10 py-6 text-lg rounded-full group shadow-lg shadow-primary/20"
+          <a
+            href="https://heyzine.com/flip-book/228fe197cc.html"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
-            Descargar Brochure
-          </Button>
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-primary via-secondary to-accent text-foreground hover:opacity-90 transition-all duration-300 px-10 py-6 text-lg rounded-full group shadow-lg shadow-primary/20"
+            >
+              <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
+              Catalogo Virtual
+            </Button>
+          </a>
         </div>
 
         {/* Contact Section */}

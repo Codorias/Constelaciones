@@ -3,7 +3,7 @@
 import { StarField } from "./star-field"
 import { StarIcon } from "./star-icon"
 import { Button } from "@/components/ui/button"
-import { Download, ChevronDown } from "lucide-react"
+import { Download, ChevronDown, Play } from "lucide-react"
 
 export function HeroSection() {
   const scrollToAbout = () => {
@@ -69,13 +69,35 @@ export function HeroSection() {
         </div>
 
         {/* CTA Button */}
-        <Button
-          size="lg"
-          className="bg-primary/20 backdrop-blur-sm border border-primary/50 text-foreground hover:bg-primary/30 hover:border-primary transition-all duration-300 px-8 py-6 text-lg rounded-full group"
-        >
-          <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
-          Descargar Brochure
-        </Button>
+        <div className="flex flex-col md:flex-row gap-4 justify-center">
+          <a
+            href="https://heyzine.com/flip-book/228fe197cc.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button
+              size="lg"
+              className="bg-primary/20 backdrop-blur-sm border border-primary/50 text-foreground hover:bg-primary/30 hover:border-primary transition-all duration-300 px-8 py-6 text-lg rounded-full group w-full md:w-auto"
+            >
+              <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
+              Catalogo Virtual
+            </Button>
+          </a>
+
+          <a
+            href="https://www.youtube.com/watch?v=X-XZx1o_w-A"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button
+              size="lg"
+              className="bg-primary/20 backdrop-blur-sm border border-primary/50 text-foreground hover:bg-primary/30 hover:border-primary transition-all duration-300 px-8 py-6 text-lg rounded-full group w-full md:w-auto"
+            >
+              <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+              Experiencia Sensorial
+            </Button>
+          </a>
+        </div>
       </div>
 
       {/* Scroll Indicator */}
