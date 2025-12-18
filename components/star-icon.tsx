@@ -1,14 +1,12 @@
 import { ComponentProps } from "react"
 
-export function StarIcon({ className, ...props }: ComponentProps<"svg">) {
+export function StarIcon({ className, ...props }: ComponentProps<"img">) {
   return (
-    <svg
-      viewBox="0 0 100 100"
+    <img
+      src="/star-logo.png"
+      alt="Estrella Constelaciones"
       className={className}
-      fill="currentColor"
       {...props}
-    >
-      <path d="M50 0 L52 45 L100 50 L52 55 L50 100 L48 55 L0 50 L48 45 Z" />
-    </svg>
+    />
   )
 }

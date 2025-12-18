@@ -27,7 +27,7 @@ export function AboutSection() {
   return (
     <section ref={sectionRef} id="about" className="relative py-32 px-4 overflow-hidden">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-card to-background" />
+      <div className="absolute inset-0 bg-linear-to-b from-background via-card to-background" />
 
       {/* Decorative elements */}
       <div className="absolute top-20 left-10 opacity-10">
@@ -49,7 +49,7 @@ export function AboutSection() {
           >
             Sobre el Proyecto
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-primary via-secondary to-accent mx-auto rounded-full" />
+          <div className="w-24 h-1 bg-linear-to-r from-primary via-secondary to-accent mx-auto rounded-full" />
         </div>
 
         {/* Content */}
