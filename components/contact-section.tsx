@@ -30,7 +30,7 @@ export function ContactSection() {
   return (
     <section ref={sectionRef} id="contact" className="relative py-32 px-4 overflow-hidden">
       {/* Background with stars */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-card to-background" />
+      <div className="absolute inset-0 bg-linear-to-b from-background via-card to-background" />
       <StarField />
 
       {/* Decorative gradient orbs */}
@@ -62,7 +62,7 @@ export function ContactSection() {
           >
             <Button
               size="lg"
-              className="bg-gradient-to-r from-primary via-secondary to-accent text-foreground hover:opacity-90 transition-all duration-300 px-10 py-6 text-lg rounded-full group shadow-lg shadow-primary/20"
+              className="bg-linear-to-r from-primary via-secondary to-accent text-foreground hover:opacity-90 transition-all duration-300 px-10 py-6 text-lg rounded-full group shadow-lg shadow-primary/20"
             >
               <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
               Catalogo Virtual
@@ -85,7 +85,7 @@ export function ContactSection() {
             <p className="text-foreground/60 text-lg max-w-2xl mx-auto">
               ¿Tienes preguntas sobre el proyecto o deseas colaborar? Escríbenos
             </p>
-            <div className="w-24 h-1 bg-gradient-to-r from-primary via-secondary to-accent mx-auto rounded-full mt-6" />
+            <div className="w-24 h-1 bg-linear-to-r from-primary via-secondary to-accent mx-auto rounded-full mt-6" />
           </div>
 
           <div className="flex flex-col items-center gap-12">
