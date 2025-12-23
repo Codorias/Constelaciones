@@ -12,6 +12,7 @@ interface Artist {
   description: string
   image: string
   link: string
+  imageClassName?: string
 }
 
 const artists: Artist[] = [
@@ -21,9 +22,10 @@ const artists: Artist[] = [
     firstName: "Julián Alberto",
     lastName: "Villamizar Rincón",
     description:
-      "Artista visual que explora las intersecciones entre la memoria colectiva y el paisaje urbano santandereano a través de técnicas mixtas.",
-    image: "/artistic-portrait-abstract-cosmic.jpg",
-    link: "#",
+      "Julián Villamizar Rincón, creador santandereano, conjuga en su trayectoria el arte, el diseño y la gestión cultural con un marcado compromiso social.",
+    image: "/julian-villamizar.png",
+    link: "https://heyzine.com/flip-book/b88325401c.html#page/11",
+    imageClassName: "object-top",
   },
   {
     id: 2,
@@ -31,9 +33,10 @@ const artists: Artist[] = [
     firstName: "Sebastián",
     lastName: "Gómez Vargas",
     description:
-      "Creador multidisciplinar cuya obra reflexiona sobre la identidad cultural y las tradiciones ancestrales del territorio.",
-    image: "/artistic-portrait-creative-cosmic.jpg",
-    link: "#",
+      "Artista plástico formado en la Universidad de Santander y abogado de la Universidad Autónoma de Bucaramanga.",
+    image: "/sebastian-gomez.png",
+    link: "https://heyzine.com/flip-book/b88325401c.html#page/18",
+    imageClassName: "object-top",
   },
   {
     id: 3,
@@ -41,9 +44,10 @@ const artists: Artist[] = [
     firstName: "Neryth Yamile",
     lastName: "Manrique Mendoza",
     description:
-      "Artista contemporánea que trabaja con instalaciones y arte conceptual, explorando las relaciones entre espacio y tiempo.",
-    image: "/artistic-portrait-modern-cosmic.jpg",
-    link: "#",
+      "Artista formada en la Escuela de Bellas Artes, Universidad Industrial de Santander.",
+    image: "/neryth-manrique.png",
+    link: "https://heyzine.com/flip-book/b88325401c.html#page/26",
+    imageClassName: "object-top",
   },
   {
     id: 4,
@@ -51,9 +55,10 @@ const artists: Artist[] = [
     firstName: "Gloria Liliana",
     lastName: "Rodríguez García",
     description:
-      "Pintora y escultora cuyo trabajo dialoga con la naturaleza y los elementos orgánicos del paisaje santandereano.",
-    image: "/artistic-portrait-elegant-cosmic.jpg",
-    link: "#",
+      "Artista plástica cuya práctica se sitúa en un cruce transdisciplinar entre el arte, los saberes del cuidado, la pedagogía, el territorio y el conocimiento tradicional.",
+    image: "/gloria-rodriguez.png",
+    link: "https://heyzine.com/flip-book/b88325401c.html#page/35",
+    imageClassName: "object-top",
   },
   {
     id: 5,
@@ -61,9 +66,10 @@ const artists: Artist[] = [
     firstName: "John Fredy",
     lastName: "Calderón Ortiz",
     description:
-      "Artista experimental que fusiona tecnología y arte tradicional para crear experiencias inmersivas y reflexivas.",
-    image: "/artistic-portrait-experimental-cosmic.jpg",
-    link: "#",
+      "Maestro en Bellas Artes de la Universidad Industrial de Santander, con presencia en exposiciones y muestras artísticas individuales y colectivas en diferentes ciudades de Colombia.",
+    image: "/john-calderon.png",
+    link: "https://heyzine.com/flip-book/b88325401c.html#page/42",
+    imageClassName: "object-top",
   },
   {
     id: 6,
@@ -71,9 +77,10 @@ const artists: Artist[] = [
     firstName: "Gerson Felipe",
     lastName: "Rozo Betancur",
     description:
-      "Fotógrafo que captura la esencia efímera de la luz y la sombra en los rincones olvidados de la ciudad.",
-    image: "/placeholder.svg",
-    link: "#",
+      "Arquitecto con sólida experiencia en representación gráfica, visualización 3D y diseño.",
+    image: "/gerson-rozo.png",
+    link: "https://heyzine.com/flip-book/b88325401c.html#page/50",
+    imageClassName: "object-top",
   },
   {
     id: 7,
@@ -81,9 +88,10 @@ const artists: Artist[] = [
     firstName: "Yury Hernando",
     lastName: "Forero Casas",
     description:
-      "Escultor sonoro que transforma el ruido urbano en paisajes acústicos que invitan a la meditación.",
-    image: "/placeholder.svg",
-    link: "#",
+      "Artista y docente colombiano con una trayectoria que integra creación artística, curaduría y pedagogía, desarrollada entre la educación formal e informal.",
+    image: "/yury-forero.png",
+    link: "https://heyzine.com/flip-book/b88325401c.html#page/57",
+    imageClassName: "object-top",
   },
 ]
 
@@ -123,7 +131,7 @@ function ArtistCard({ artist, index }: { artist: Artist; index: number }) {
           <img
             src={artist.image || "/placeholder.svg"}
             alt={artist.name}
-            className={`w-full h-full object-cover transition-all duration-700 ${isHovered ? "scale-110 brightness-50" : "scale-100"}`}
+            className={`w-full h-full object-cover ${artist.imageClassName || "object-center"} transition-all duration-700 ${isHovered ? "scale-110 brightness-50" : "scale-100"}`}
           />
 
           {/* Overlay gradient */}
@@ -139,7 +147,7 @@ function ArtistCard({ artist, index }: { artist: Artist; index: number }) {
           </div>
 
           {/* Content */}
-          <div className="absolute bottom-0 left-0 right-0 p-6">
+          <div className={`absolute bottom-0 left-0 right-0 p-6 transition-transform duration-500 ${isHovered ? "translate-y-0" : "translate-y-6"}`}>
             <h3 className="text-2xl font-bold mb-1">
               <span className="font-light">{artist.firstName}</span>{" "}
               <span className="font-black">{artist.lastName}</span>
