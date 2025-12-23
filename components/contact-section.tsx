@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react"
 import { StarField } from "./star-field"
 import { StarIcon } from "./star-icon"
 import { Button } from "@/components/ui/button"
-import { Download, Mail, MapPin, Phone } from "lucide-react"
+import { Eye, Mail, MapPin, Phone } from "lucide-react"
 
 export function ContactSection() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -56,7 +56,7 @@ export function ContactSection() {
             Explora todas las obras y conoce más sobre cada artista en nuestro brochure digital
           </p>
           <a
-            href="https://heyzine.com/flip-book/228fe197cc.html"
+            href="https://heyzine.com/flip-book/b88325401c.html"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -64,8 +64,8 @@ export function ContactSection() {
               size="lg"
               className="bg-linear-to-r from-primary via-secondary to-accent text-foreground hover:opacity-90 transition-all duration-300 px-10 py-6 text-lg rounded-full group shadow-lg shadow-primary/20"
             >
-              <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
-              Catalogo Virtual
+              <Eye className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+              Catálogo Virtual
             </Button>
           </a>
         </div>

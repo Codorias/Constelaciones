@@ -3,7 +3,7 @@
 import { StarField } from "./star-field"
 import { StarIcon } from "./star-icon"
 import { Button } from "@/components/ui/button"
-import { Download, ChevronDown, Play } from "lucide-react"
+import { Eye, ChevronDown, Play } from "lucide-react"
 
 export function HeroSection() {
   const scrollToAbout = () => {
@@ -71,7 +71,7 @@ export function HeroSection() {
         {/* CTA Button */}
         <div className="flex flex-col md:flex-row gap-4 justify-center">
           <a
-            href="https://heyzine.com/flip-book/228fe197cc.html"
+            href="https://heyzine.com/flip-book/b88325401c.html"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -79,8 +79,8 @@ export function HeroSection() {
               size="lg"
               className="bg-primary/20 backdrop-blur-sm border border-primary/50 text-foreground hover:bg-primary/30 hover:border-primary transition-all duration-300 px-8 py-6 text-lg rounded-full group w-full md:w-auto"
             >
-              <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
-              Catalogo Virtual
+              <Eye className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+              Catálogo Virtual
             </Button>
           </a>
 
