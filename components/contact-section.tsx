@@ -71,6 +71,7 @@ export function ContactSection() {
         </div>
 
         {/* Contact Section */}
+        {/* Contact Section Hidden
         <div
           className={`transition-all duration-1000 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
@@ -89,7 +90,7 @@ export function ContactSection() {
           </div>
 
           <div className="flex flex-col items-center gap-12">
-            {/* Contact Info */}
+            
             <div className="grid md:grid-cols-3 gap-8 w-full max-w-5xl">
               <div className="flex flex-col items-center text-center gap-4 p-8 rounded-3xl bg-card/30 backdrop-blur-sm border border-border/30 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1">
                 <div className="p-4 rounded-full bg-primary/20">
@@ -122,7 +123,7 @@ export function ContactSection() {
               </div>
             </div>
 
-            {/* WhatsApp Button */}
+            
             <a
               href="https://wa.me/573000000000"
               target="_blank"
@@ -139,6 +140,7 @@ export function ContactSection() {
             </a>
           </div>
         </div>
+        */}
       </div>
 
       <div className="relative z-10 mt-24 pt-8 border-t border-border/30">

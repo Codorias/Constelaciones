@@ -51,12 +51,7 @@ export function Navigation() {
             >
               Artistas
             </button>
-            <button
-              onClick={() => scrollTo("contact")}
-              className="text-foreground/70 hover:text-foreground transition-colors text-sm tracking-wide"
-            >
-              Contacto
-            </button>
+
           </div>
 
           {/* Mobile Menu Button */}
@@ -85,12 +80,7 @@ export function Navigation() {
             >
               Artistas
             </button>
-            <button
-              onClick={() => scrollTo("contact")}
-              className="block w-full text-left text-foreground/70 hover:text-foreground transition-colors py-2"
-            >
-              Contacto
-            </button>
+
           </div>
         )}
       </div>
