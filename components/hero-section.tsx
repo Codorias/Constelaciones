@@ -21,7 +21,7 @@ export function HeroSection() {
       />
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-background/30" />
+      <div className="absolute inset-0 bg-linear-to-t from-background via-background/60 to-background/30" />
 
       {/* Animated Stars */}
       <StarField />
@@ -71,7 +71,7 @@ export function HeroSection() {
         {/* CTA Button */}
         <div className="flex flex-col md:flex-row gap-4 justify-center">
           <a
-            href="https://heyzine.com/flip-book/b88325401c.html"
+            href="https://heyzine.com/flip-book/b6c2d3cfde.html"
             target="_blank"
             rel="noopener noreferrer"
           >

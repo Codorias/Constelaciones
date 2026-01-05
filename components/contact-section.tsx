@@ -56,7 +56,7 @@ export function ContactSection() {
             Explora todas las obras y conoce más sobre cada artista en nuestro brochure digital
           </p>
           <a
-            href="https://heyzine.com/flip-book/b88325401c.html"
+            href="https://heyzine.com/flip-book/b6c2d3cfde.html"
             target="_blank"
             rel="noopener noreferrer"
           >

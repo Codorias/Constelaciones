@@ -24,7 +24,7 @@ const artists: Artist[] = [
     description:
       "Julián Villamizar Rincón, creador santandereano, conjuga en su trayectoria el arte, el diseño y la gestión cultural con un marcado compromiso social.",
     image: "/julian-villamizar.png",
-    link: "https://heyzine.com/flip-book/b88325401c.html#page/11",
+    link: "https://heyzine.com/flip-book/b6c2d3cfde.html#page/10",
     imageClassName: "object-top",
   },
   {
@@ -35,7 +35,7 @@ const artists: Artist[] = [
     description:
       "Artista plástico formado en la Universidad de Santander y abogado de la Universidad Autónoma de Bucaramanga.",
     image: "/sebastian-gomez.png",
-    link: "https://heyzine.com/flip-book/b88325401c.html#page/18",
+    link: "https://heyzine.com/flip-book/b6c2d3cfde.html#page/18",
     imageClassName: "object-top",
   },
   {
@@ -46,7 +46,7 @@ const artists: Artist[] = [
     description:
       "Artista formada en la Escuela de Bellas Artes, Universidad Industrial de Santander.",
     image: "/neryth-manrique.png",
-    link: "https://heyzine.com/flip-book/b88325401c.html#page/26",
+    link: "https://heyzine.com/flip-book/b6c2d3cfde.html#page/26",
     imageClassName: "object-top",
   },
   {
@@ -57,7 +57,7 @@ const artists: Artist[] = [
     description:
       "Artista plástica cuya práctica se sitúa en un cruce transdisciplinar entre el arte, los saberes del cuidado, la pedagogía, el territorio y el conocimiento tradicional.",
     image: "/gloria-rodriguez.png",
-    link: "https://heyzine.com/flip-book/b88325401c.html#page/35",
+    link: "https://heyzine.com/flip-book/b6c2d3cfde.html#page/34",
     imageClassName: "object-top",
   },
   {
@@ -68,7 +68,7 @@ const artists: Artist[] = [
     description:
       "Maestro en Bellas Artes de la Universidad Industrial de Santander, con presencia en exposiciones y muestras artísticas individuales y colectivas en diferentes ciudades de Colombia.",
     image: "/john-calderon.png",
-    link: "https://heyzine.com/flip-book/b88325401c.html#page/42",
+    link: "https://heyzine.com/flip-book/b6c2d3cfde.html#page/42",
     imageClassName: "object-top",
   },
   {
@@ -79,7 +79,7 @@ const artists: Artist[] = [
     description:
       "Arquitecto con sólida experiencia en representación gráfica, visualización 3D y diseño.",
     image: "/gerson-rozo.png",
-    link: "https://heyzine.com/flip-book/b88325401c.html#page/50",
+    link: "https://heyzine.com/flip-book/b6c2d3cfde.html#page/50",
     imageClassName: "object-top",
   },
   {
@@ -90,7 +90,7 @@ const artists: Artist[] = [
     description:
       "Artista y docente colombiano con una trayectoria que integra creación artística, curaduría y pedagogía, desarrollada entre la educación formal e informal.",
     image: "/yury-forero.png",
-    link: "https://heyzine.com/flip-book/b88325401c.html#page/57",
+    link: "https://heyzine.com/flip-book/b6c2d3cfde.html#page/57",
     imageClassName: "object-top",
   },
 ]
@@ -136,7 +136,7 @@ function ArtistCard({ artist, index }: { artist: Artist; index: number }) {
 
           {/* Overlay gradient */}
           <div
-            className={`absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent transition-opacity duration-500 ${isHovered ? "opacity-90" : "opacity-60"}`}
+            className={`absolute inset-0 bg-linear-to-t from-background via-background/50 to-transparent transition-opacity duration-500 ${isHovered ? "opacity-90" : "opacity-60"}`}
           />
 
           {/* Star decoration */}
@@ -220,7 +220,7 @@ export function ArtistsSection() {
           <p className="text-foreground/60 text-lg max-w-2xl mx-auto">
             Siete voces únicas que conforman esta constelación de arte contemporáneo santandereano
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-secondary via-primary to-accent mx-auto rounded-full mt-6" />
+          <div className="w-24 h-1 bg-linear-to-r from-secondary via-primary to-accent mx-auto rounded-full mt-6" />
         </div>
 
         {/* Artists Grid */}
